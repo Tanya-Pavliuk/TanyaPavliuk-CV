@@ -1,0 +1,93 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.title.line::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #FBC02D;
+}
+
+.hidden {
+  display: none;
+}
+
+:root {
+  --brand-color: #4F2EE8;
+  --text-color: #111111;
+  --subtitle-color: #B4AFAF;
+  --categories-rgba-color: rgba(17, 17, 17, 0.60);
+  --gray-button-color: #F3F3F3;
+  --gray-rgba-color: rgba(246, 246, 246, 0.50);
+  --background-color: #F6F6F6;
+  --white-color: #FFFFFF;
+  --yelow-color: #EAC645;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+
+}
+
+.conteiner {
+  max-width: 1200px;
+  width: 768px;
+  width: 450px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .conteiner {
+    width: 1400px;
+  }
+}
+

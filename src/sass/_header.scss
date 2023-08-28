@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: end;
+}
+
+.header-menu_nav {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-link {
+    color: #353535;
+    padding: 20px 20px;
+    background-color: transparent;
+    transition: background-color 250ms linear, color 250ms linear;
+    &:hover,
+    &:focus{
+        background-color: #FBC02D;
+        color: #ffffff;
+    }
+}
+
+.active {
+    color: #ffffff;
+    background-color: #FBC02D;
+}

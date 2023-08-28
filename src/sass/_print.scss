@@ -1,0 +1,75 @@
+@media screen {
+    .print {
+        position: absolute;
+        display: none;
+    }
+}
+
+@media print {
+    .print {
+        display: block;
+    }
+
+    .screen {
+        display: none;
+    }
+
+    .print__about {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+    }
+
+    .print__content-about {
+        padding: 10px;
+    }
+
+    .print__contact {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .print__list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+    }
+
+    .print__item.item-main {
+        border: 1px solid black;
+        border-radius: 33px;
+        padding: 5px 20px;
+    }
+
+    .print__skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        margin-top: 10px;
+    }
+
+    .print__item.item-skill {
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+    }
+
+    .print__education {
+        padding: 20px 0;
+    }
+
+    .print__education-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .print__experience-list {
+        margin-top: 10px;
+    }
+
+    .print__item.experience-item {
+        padding-left: 40px;
+    }
+}

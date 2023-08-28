@@ -1,0 +1,22 @@
+.conteiner.education {
+    padding: 30px 0;
+}
+
+.education__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    margin-top: 20px;
+}
+
+.education__list-item {
+    padding: 10px;
+    border: 1px solid #FBC02D;
+
+    transition: transform 250ms linear, background-color 250ms linear;
+    &:hover{
+        transform: scale(1.025);
+        background-color: #fcf6e2;
+    }
+};

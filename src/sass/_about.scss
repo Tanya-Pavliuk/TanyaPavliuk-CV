@@ -1,0 +1,61 @@
+.about-me {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me_photo {
+    width: 400px;
+}
+
+.about-me_info {
+    padding: 40px;
+}
+
+.title.main-title {
+    margin: 10px 0;
+    font-size: 40px;
+}
+
+.title.about-me {
+    margin-top: 50px;
+    display: block;
+}
+
+.title.react {
+    margin-bottom: 20px;
+}
+
+/* --------botton-------- */
+.about-me_button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    margin-top: 30px;
+    height: 55px;
+
+    box-shadow: -1px -1px 0 1px #FBC02D, 0 0 0 2px #353535;
+    border-radius: 15px;
+    background: none;
+    white-space: nowrap;
+    cursor: pointer;
+
+    color: #353535;
+    font-weight: 500;
+    font-size: 20px;
+    transition: box-shadow 250ms linear, color 250ms linear;
+
+    &:hover,
+    &:focus {
+            color: #ffffff;
+            background-color: #FBC02D;
+            box-shadow: 1px 1px 0 1px #FBC02D;
+        }
+}
+
