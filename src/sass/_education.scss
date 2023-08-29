@@ -14,9 +14,10 @@
     padding: 10px;
     border: 1px solid #FBC02D;
 
-    transition: transform 250ms linear, background-color 250ms linear;
+    transition: transform 250ms linear, background-color 250ms linear, box-shadow 100ms linear;
     &:hover{
         transform: scale(1.025);
         background-color: #fcf6e2;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px
     }
 };
