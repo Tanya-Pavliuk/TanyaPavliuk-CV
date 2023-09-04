@@ -1,27 +1,28 @@
-.contact-and-language {
+.lang{
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+        
     gap: 50px;
     background-color: #f2db8b;
 }
 
-.wrapper__cont-and-leng {
+.wrapper__leng {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
 }
 
-.list>* {
-    padding: 20px 0 10px;
-    font-weight: 500;
-    font-size: 18px;
-}
-
+//----- contacts
 .contact-link {
     display: flex;
     align-items: center;
     gap: 7px;
+}
+
+.contact_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 20px 20px;
 }
