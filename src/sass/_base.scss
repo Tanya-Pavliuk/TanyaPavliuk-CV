@@ -67,13 +67,20 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  width: 768px;
-  width: 450px;
   margin: 0 auto;
+  width: 450px;
 }
-
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
 @media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media (min-width: 1400px) {
   .container {
     width: 1400px;
   }
