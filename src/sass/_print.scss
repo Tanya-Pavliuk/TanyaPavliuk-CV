@@ -57,17 +57,21 @@
 
     .print__item.item-skill {
         border-bottom: 1px solid black;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .print__education {
-        padding: 20px 0;
+        padding-top: 10px;
     }
 
     .print__education-list {
         display: flex;
         flex-direction: column;
         gap: 15px;
+    }
+
+    .print_experience{
+        margin-top: 10px;
     }
 
     .print__experience-list {
@@ -79,5 +83,10 @@
     }
     .print_project{
         padding-top: 10px;
+    }
+    .print_project__list{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 }
