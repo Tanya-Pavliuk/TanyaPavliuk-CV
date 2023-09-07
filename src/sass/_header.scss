@@ -5,18 +5,24 @@
 
 .header-menu_nav {
     display: flex;
-    gap: 30px;
+    gap: 5px;
+    @media screen and (min-width:768px) {
+        gap: 30px;
+    }
 }
 
 .menu-link {
     color: #353535;
-    padding: 20px 20px;
+    padding: 10px 10px;
     background-color: transparent;
     transition: background-color 250ms linear, color 250ms linear;
     &:hover,
     &:focus{
         background-color: #FBC02D;
         color: #ffffff;
+    }
+    @media screen and (min-width:768px) {
+        padding: 20px 20px;
     }
 }
 

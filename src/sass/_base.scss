@@ -26,6 +26,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 
 .title.line::after {
@@ -63,28 +66,27 @@ body {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
-
 }
 
 .container {
   margin: 0 auto;
-  width: 450px;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 768px;
+  padding: 0 15px;
+@media screen and (min-width:450px) {
+    width: 450px;
+    padding: 0 15px;
   }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
+@media screen and (min-width:768px) {
+      width: 768px;
   }
+@media screen and (min-width:1200px) {
+      width: 1200px;
 }
-@media (min-width: 1400px) {
-  .container {
-    width: 1400px;
-  }
+@media screen and (min-width:1400px) {
+  width: 1400px;
 }
+}
+
+
 
 .title{
   font-size: 20px;

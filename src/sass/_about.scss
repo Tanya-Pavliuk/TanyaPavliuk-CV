@@ -1,14 +1,41 @@
 .about-me {
+    @media screen and (min-width:768px) {
     display: grid;
+    grid-template-rows: 1fr;
     grid-template-columns: 300px 1fr;
+    }
+    @media screen and (max-width:1200px) {
+        margin-top: 10px;
+    }
 }
 
 .about-me_photo {
-    width: 300px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    @media screen and (min-width:768px) {
+        display: block;
+        width: 300px;
+    }
+}
+.about_wrapper_photo{
+    padding-left: 20px;
+    @media screen and (min-width:768px) {
+        display: none;
+        }
+}
+.about_wrapper_content{
+    @media screen and (max-width:768px) {
+        display: none;
+        }
 }
 
+
 .about-me_info {
-    padding: 40px;
+    padding: 10px;
+    @media screen and (min-width:768px) {
+        padding: 40px;
+        }
 }
 
 /* --------botton-------- */
@@ -43,5 +70,10 @@
             background-color: #FBC02D;
             box-shadow: 1px 1px 0 1px #FBC02D;
         }
+}
+#printBtn{
+    @media screen and (max-width:450px) {
+        display: none;
+    }
 }
 
