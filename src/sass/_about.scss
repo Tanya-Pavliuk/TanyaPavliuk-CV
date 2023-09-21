@@ -10,9 +10,12 @@
 }
 
 .about-me_photo {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    align-items: center;
+    @media screen and (min-width:375px) {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        align-items: center;
+        }
+    
     @media screen and (min-width:768px) {
         display: block;
         width: 300px;
