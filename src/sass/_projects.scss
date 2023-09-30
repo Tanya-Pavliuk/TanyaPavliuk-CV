@@ -1,13 +1,27 @@
 #projects{
     padding: 30px 0;
-    background-color:#cdc1a3;
+    // background-color:#cdc1a3;
+}
+.project__item{
+background-color: #fff;
 }
 
 .projects__link {
     position: relative;
+    
     &:hover .overlay {
      opacity: 1;
     }   
+}
+.project_title-project{
+    text-align: center;
+    padding: 10px 0;
+
+    font-size: 14px;
+    border-bottom: 1px solid black;
+    @media screen and (min-width:768px) {
+        font-size: 20px;
+        }
 }
 .overlay {
     position: absolute;
@@ -15,13 +29,8 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.91);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:5px;
+    text-align: center;
 
-    padding: 40px;
     color: #fff;
     opacity: 0;
     top: 0;
@@ -40,13 +49,15 @@
     }
 }
 .project-title {
-    padding: 5px 15px;
-    border: 1px solid #fff;
-    border-radius: 33px;
-    font-size: 12px;
-    @media screen and (min-width:768px) {
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
     font-size: 14px;
-    padding: 10px 30px;
+    margin-bottom: 20px;
+    @media screen and (min-width:768px) {
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: 100;
+    margin-bottom: 20px;
         }
 }
 
@@ -62,7 +73,7 @@
      li{
         // height: 260px;
         overflow: hidden;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 
         &:hover{
             transform: scale(1.03);
@@ -78,9 +89,15 @@
 }
 .text.text_project{
     font-size: 8px;
+    padding: 0 10px;
     @media screen and (min-width:768px) {
-        font-size: 14px;
+        font-size: 12px;
+        padding: 0 15px;
     }
+        @media screen and (min-width:1240px) {
+            font-size: 16px;
+            padding: 0 20px;
+        }
 }
 #team_projects{
     @media  screen and (max-width:768px) {
