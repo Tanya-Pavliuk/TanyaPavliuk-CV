@@ -21,3 +21,8 @@
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px
     }
 };
+
+.education__contect{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
