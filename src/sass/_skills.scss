@@ -8,10 +8,19 @@
     padding-right: 30px;
     padding-left: 30px;
 }
+.skills_sub-wrapper{
+    display: flex;
+    gap: 20px;
+}
 .skill__list {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+}
+.hard_skill{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
 }
 .hard_skill >:before {
     color: #feb633;
@@ -22,6 +31,7 @@
     flex-direction: column;
     padding-right: 30px;
     padding-left: 30px;
+    gap:10px;
 }
 
 .skill__item {}
