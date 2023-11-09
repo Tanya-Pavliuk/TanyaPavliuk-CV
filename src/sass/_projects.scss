@@ -4,6 +4,37 @@
 }
 .project__item{
 background-color: #fff;
+
+        // height: 260px;
+        overflow: hidden;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        transition: box-shadow 250ms linear;
+        animation: none;
+        
+        
+
+        &:hover {
+            box-shadow: rgba(255, 6, 6, 0.633) 0px 4px 6px 0px, rgba(255, 213, 5, 0.945) 0px 6px 16px 0px;
+            animation: amimate 2s ease infinite;
+        }
+
+        @keyframes amimate {
+            0% {
+                box-shadow: rgba(255, 6, 6, 0.633) 0px 4px 6px 0px,
+                    rgba(255, 213, 5, 0.945) 0px 6px 16px 0px;
+            }
+
+            50% {
+                box-shadow: rgb(255, 213, 5) 0px 6px 16px 0px, rgba(255, 8, 8, 0.907) 0px 4px 10px 0px;
+
+            }
+
+            100% {
+                box-shadow: rgba(255, 6, 6, 0.633) 0px 4px 6px 0px,
+                    rgba(255, 213, 5, 0.945) 0px 6px 16px 0px;
+            }
+
+        }
 }
 
 .projects__link {
@@ -70,16 +101,7 @@ background-color: #fff;
     @media screen and (min-width:768px) and (max-width:1200px) {
             padding: 0;
         }
-     li{
-        // height: 260px;
-        overflow: hidden;
-        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-
-        &:hover{
-            transform: scale(1.03);
-        }
-       
-    }
+     
 }
 
 .projects__title{
